@@ -1,0 +1,1 @@
+BG2<A, B, U> := Group<A, B, U | B^2, A * U^-1 * A^-1 * U, (A * B)^3, (U * B * U^-1 * B)^2, B * U * B * A * U^-1 * B * A * B * U * A * B * U^-1>;

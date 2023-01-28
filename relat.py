@@ -252,7 +252,7 @@ class Presentation:
 		gens = {name: Matrix.from_json(mat) for name, mat in obj['generators'].items()}
 		circs = {Circle(QuadExt(Fraction(crc['cnt'][0]), Fraction(crc['cnt'][1])), Fraction(crc['rad2'])) for crc in obj['circles']}
 		
-		# Set discriminant
-		QuadExt.set_disc(obj['discriminant'])
+		# Set d-value
+		QuadExt.setd(obj['dvalue'])
 		return Presentation(gens, circs=circs, height=Fraction(obj['height']), relats=obj['relations'])
 
